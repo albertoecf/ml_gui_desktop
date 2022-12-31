@@ -5,15 +5,13 @@ print('d')
 
 
 def show_date():
+    '''Get date and show as text in label widget'''
     from datetime import date
     today = date.today()
     today_text = str(today.strftime("%b-%d-%Y"))
     today_text = "Today's date: {date_text} ".format(date_text=today_text)
     welcome_message.config(text=today_text)
     print(today_text)
-
-
-# %%
 # %%
 window = Tk()
 window.title('Morning App')
@@ -35,9 +33,11 @@ Button(window, text="Quit",
        command=window.quit,
        fg='red',
        bg="#FF8C00").pack()
-Button(window, text="Date", command=show_date).pack()
+show_date_button = Button(window, text="Date", command=show_date)
+show_date_button.pack()
 
 # run our window
 window.mainloop()
 
 # %%
+

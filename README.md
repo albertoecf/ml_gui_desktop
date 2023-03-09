@@ -1,14 +1,35 @@
-This convolutional neural network desktop application allows us to classify images according to defined categories. 
+## Image Classifier
 
-In this example we categorize : Hamburger vs Box. 
+This is a desktop application that utilizes a Convolutional Neural Network (CNN) to classify images into defined categories. In this example, we are categorizing images of hamburgers and boxes.
 
-Use case : In different online orders we order a product and we don't receive it according to the specifications. 
+The main libraries used in this project are Tkinter (for building the GUI), Keras (for building and training the CNN), and Scikit-learn (for data preprocessing and model evaluation).
 
-This implementation may not seem very useful (who would be interested in distinguishing a box from a hamburger?). But it builds the architecture for more sophisticated implementations. 
+The CNN model was trained on a dataset of images of hamburgers and boxes, and achieved high accuracy in distinguishing between the two classes
 
-The application allows : Load an image from the user's computer system. View the image and rate the image. 
+## Use case
 
-Main libraries used : Tkinter, keras, sklearn
+This application can be used in various scenarios such as in online orders where the user orders a product and receives a different product than what was specified. This implementation may not seem very useful (who would be interested in distinguishing a box from a hamburger?). But it builds the architecture for more sophisticated implementations.
+
+## Features
+
+This application allows users to:
+* Load an image from their computer system
+* View the image
+* Rate the image
+
+
+## Dependencies
+The main libraries used in this project are:
+
+* Tkinter
+* Keras
+* scikit-learn
+
+### Running the application
+
+To run the application, simply run the gui_image_classifier.py file. This will launch a GUI where users can upload their images and classify them
+
+## Example 
 
 Instantiate desktop app
 
